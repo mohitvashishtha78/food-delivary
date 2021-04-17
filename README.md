@@ -124,5 +124,4 @@
                 <br>
                 <input type="button" value="print bill" onclick="window.print()">
             </dl>
-    </body>
-</html>
+    
