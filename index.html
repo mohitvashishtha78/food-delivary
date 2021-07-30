@@ -12,6 +12,30 @@
                 background-color: mediumaquamarine;
                 color: black;
             }
+            .myButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
         </style>
          <script>
              function placeorder(){
@@ -104,7 +128,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Place Order" onclick="placeorder()">
+                        <input class="myButton" type="button" value="Place Order" onclick="placeorder()">
                     </td>
                 </tr>
 
@@ -123,7 +147,7 @@
                 <dt>Total bill Amount</dt>
                 <dd id="lblamount"></dd>
                 <br>
-                <input type="button" value="print bill" onclick="window.print()">
+                <input class="myButton" type="button" value="print bill" onclick="window.print()">
             </dl>
     </body>
 </html>
