@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mohit's YummyFood site<title>
+        <title>Mohit's YummyFood site <title>
         <style>
             tr{
                 background-color: mediumaquamarine;
@@ -17,6 +17,30 @@
             body{
                 background-color: darkgrey;
             }
+            .myButton {
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#63b8ee;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color:#468ccf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
         </style>
          <script>
              function placeorder(){
@@ -124,7 +148,7 @@
                 </tr>
                 <tr>
                     <td colspan="2"> 
-                        <input type="button" value="Place Order" onclick="placeorder()">
+                        <input class="myButton" type="button" value="Place Order" onclick="placeorder()">
                     </td>
                 </tr>
 
@@ -143,7 +167,7 @@
                 <dt>Total bill Amount</dt>
                 <dd id="lblamount"></dd>
                 <br>
-                <input type="button" value="print bill" onclick="window.print()">
+                <input class="myButton" type="button" value="print bill" onclick="window.print()">
             </dl>
     </body>
 </html>
